@@ -21,8 +21,8 @@ jobs:
     - name: Build
       run: |
         docker build \
-        -t ghcr.io/alfredobraga/api:${{ github.sha }} .
+        -t ghcr.io/alphabraga/juris-site:${{ github.sha }} .
     - name: Push
       run: |
         docker push \
-        ghcr.io/alfredobraga/api:${{ github.sha }}
+        ghcr.io/alphabraga/juris-site:${{ github.sha }}
